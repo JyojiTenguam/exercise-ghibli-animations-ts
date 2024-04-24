@@ -37,11 +37,14 @@
     ]
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^2.1.4",
     "@testing-library/dom": "^8.20.0",
     "@trybe/eslint-config-frontend": "^1.11.3",
     "@vitejs/plugin-react-swc": "^3.3.0",
     "@vitest/coverage-c8": "^0.30.1",
+    "eslint": "^8.57.0",
     "jsdom": "^21.1.1",
+    "prettier": "^2.8.8",
     "stylelint": "^14.16.1",
     "stylelint-order": "^5.0.0",
     "typescript": "^5.0.4",
