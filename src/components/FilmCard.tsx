@@ -2,6 +2,8 @@
 import { useContext } from 'react';
 import FilmsContext from '../context/FilmsContext';
 import { FilmType } from '../types';
+import { FaHeart } from 'react-icons/fa';
+import '../style.css';
 
 type Props = {
   film: FilmType;
@@ -18,7 +20,7 @@ function FilmCard({ film, isFavorite }: Props) {
         <p>{film.description}</p>
       </figcaption>
       <button type="button" onClick={ () => toggleFavorite(film) }>
-        { isFavorite ? 'Desfavoritar' : 'Favoritar' }
+        { isFavorite ? <FaHeart color="red" /> : <FaHeart />}
       </button>
     </figure>
   );

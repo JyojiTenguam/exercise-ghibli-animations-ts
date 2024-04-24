@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Favorites from './pages/Favorites';
 import FilmsContext from './context/FilmsContext';
 import { FilmType } from './types';
+import './style.css';
 
 function App() {
   const [films, setFilms] = useState<FilmType[]>([]);

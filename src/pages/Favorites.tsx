@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import FilmCard from '../components/FilmCard';
 import Header from '../components/Header';
 import FilmsContext from '../context/FilmsContext';
+import '../style.css';
 
 export default function Favorites() {
   const { favorites } = useContext(FilmsContext);
