@@ -8,4 +8,5 @@ export type FilmType = {
 export type FilmsContextType = {
   films: FilmType[];
   favorites: FilmType[];
+  toggleFavorite: (item: FilmType) => void;
 };

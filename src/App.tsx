@@ -7,7 +7,7 @@ import { FilmType } from './types';
 
 function App() {
   const [films, setFilms] = useState<FilmType[]>([]);
-  const [favorites] = useState<FilmType[]>([]);
+  const [favorites, setFavorites] = useState<FilmType[]>([]);
 
   useEffect(() => {
     fetch('https://api-trybe-frontend.vercel.app/api/ghibli-animations')
@@ -15,6 +15,16 @@ function App() {
       .then((data) => setFilms(data))
       .catch((error) => console.error(error));
   }, []);
+
+  function toggleFavorite(item: FilmType) {
+    const isAlreadyFavorite = favorites.find((favorite) => favorite.id === item.id);
+    if (isAlreadyFavorite) {
+      const newFavorites = favorites.filter((favorite) => favorite.id !== item.id);
+      setFavorites(newFavorites);
+    } else {
+      setFavorites([...favorites, item]);
+    }
+  }
 
   const contextValue = {
     films,

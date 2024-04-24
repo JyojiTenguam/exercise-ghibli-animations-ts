@@ -5,6 +5,7 @@ import { FilmsContextType } from '../types';
 const FilmsContext = createContext<FilmsContextType>({
   films: [],
   favorites: [],
+  toggleFavorite: () => {},
 });
 
 export default FilmsContext;
