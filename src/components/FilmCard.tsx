@@ -17,6 +17,7 @@ function FilmCard({ film, isFavorite }: Props) {
       <img src={ film.image } alt={ film.title } />
       <figcaption>
         <h2>{film.title}</h2>
+
         <p>{film.description}</p>
       </figcaption>
       <button type="button" onClick={ () => toggleFavorite(film) }>
