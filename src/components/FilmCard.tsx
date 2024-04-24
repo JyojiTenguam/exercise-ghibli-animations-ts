@@ -1,6 +1,5 @@
 // src/components/FilmCard.tsx
 import { useContext } from 'react';
-import { FaHeart } from 'react-icons/fa';
 import FilmsContext from '../context/FilmsContext';
 import { FilmType } from '../types';
 
