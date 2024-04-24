@@ -29,6 +29,7 @@ function App() {
   const contextValue = {
     films,
     favorites,
+    toggleFavorite,
   };
 
   return (
